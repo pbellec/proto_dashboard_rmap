@@ -109,7 +109,7 @@
   <script src="listNetwork.js"></script> <!--List of subjects-->
 
   <script>
-  $(document).ready(function() {
+  $(window).load(function() {
       var nbParcels = 7;
 
       <!--Generate a viewer for brain parcels--!>
@@ -135,7 +135,8 @@
         overlay: {
           sprite: "parcels",
           nbSlice: {'Y':233 , 'Z':189 },
-          smooth: true
+          smooth: true,
+          opacity: 0.5
         },
         colorMap: {
           img: "parcelsColorMap", // That is the ID of the image with the colormap
@@ -163,7 +164,8 @@
           overlay: {
             sprite: "rmapAverage",
             nbSlice: {'Y':233 , 'Z':189 },
-            smooth: true
+            smooth: true,
+            opacity: 0.8
           },
           colorMap: {
             img: "colorMap", // That is the ID of the image with the colormap
@@ -191,7 +193,8 @@
           overlay: {
             sprite: "rmapSubject",
             nbSlice: {'Y':233 , 'Z':189 },
-            smooth: true
+            smooth: true,
+            opacity: 0.8
           },
           colorMap: {
             img: "colorMap", // That is the ID of the image with the colormap
